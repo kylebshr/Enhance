@@ -10,7 +10,7 @@ import UIKit
 extension UIScrollView {
 
     /// Scroll to top using the same animation as tapping the status bar.
-    func scrollToTop() {
+    public func scrollToTop() {
         let selectorName = ["Possible:", "If", "Top", "To", "_scroll"].reversed().joined()
         let selector = NSSelectorFromString(selectorName)
         if responds(to: selector) {
